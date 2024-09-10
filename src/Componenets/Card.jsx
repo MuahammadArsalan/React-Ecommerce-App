@@ -13,16 +13,16 @@ function Card(props) {
       src={props.src}
       alt="Shoes"
       className="rounded-xl" style={{
-        width :' 200px',
-        height :' 200px'
+        width :' 120px',
+        height :' 120px'
       }} />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title">{props.title}</h2>
-    <p>{props.description}</p>
-    <p>{props.price}</p>
+    <p className='text-sm'>{props.description}</p>
+    <p>Rs.{props.price} </p>
     <div className="card-actions">
-      <button className="btn btn-primary">Show More</button>
+      <p>{props.btn}</p>
     </div>
   </div>
 </div>

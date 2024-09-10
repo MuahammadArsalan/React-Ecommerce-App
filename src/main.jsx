@@ -8,6 +8,7 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Conatct from './Pages/Contact'
 import Services from './Pages/Services'
+import SingleProduct from './Pages/SingleProduct'
 
 
 
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
       {
         path:"services",
         element:<Services/>
+      },
+      {
+        path: "singleProduct/:id",
+        element: <SingleProduct/>
+
       },
       {
         path:"*",

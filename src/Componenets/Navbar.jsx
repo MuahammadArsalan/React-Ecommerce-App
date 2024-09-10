@@ -6,7 +6,12 @@ import {Link} from 'react-router-dom'
 
  function Navbar() {
   return (
-    <div style={{
+    <>
+    
+
+    <div className="navbar bg-base-300 flex justify-between">
+  <button className="btn btn-ghost text-xl">Zara collection</button>
+  <div style={{
         display:'flex',
 justifyContent:'center',
 gap:'20px',
@@ -20,6 +25,13 @@ margin:'20px'
 
 
     </div>
+
+
+</div>
+
+</>
+
+
   )
 }
 export default Navbar
